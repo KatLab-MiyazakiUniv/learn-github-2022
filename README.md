@@ -5,13 +5,13 @@
 
 ### 2. `fork`した自分のリポジトリをクローンする
 ```
-$ git clone https://github.com/[githubユーザ名]/learn-github-2021.git
+$ git clone https://github.com/[githubユーザ名]/learn-github-2022.git
 ```
 ### 3. `upstream`を登録する
 `upstream`として親リポジトリを登録する(`upstream`は後述する最新の状態の取得で使用する)
 ```
-$ cd learn-github-2021
-$ git remote add upstream https://github.com/KatLab-MiyazakiUniv/learn-github-2021.git
+$ cd learn-github-2022
+$ git remote add upstream https://github.com/KatLab-MiyazakiUniv/learn-github-2022.git
 ```
 
 ### 4. ローカルリポジトリで作業する
@@ -22,7 +22,7 @@ githubの`issues`タブにある`New issue`をクリックして`issue`を建て
 #### 4.2. 作業用ブランチを切る
 ブランチを確認すると，現在`main`ブランチにいることが分かる
 ```
-$ cd learn-github-2021/[自分の名前のディレクトリ]
+$ cd learn-github-2022/[自分の名前のディレクトリ]
 $ git branch
 * main
 ```
@@ -35,8 +35,7 @@ $ git branch
 * ticket-[issue番号]
 ```
 ※`git switch`はブランチを移動するコマンドで，オプションに`-c`をつけることで新たにブランチを作成して移動する
-#### 4.3. 列挙体の課題ファイルをディレクトリ下に新たに追加して，`.gitkeep`を削除する
-課題ファイルの名前は`Direction.cpp`にしてください
+
 #### 4.4. 編集内容をコミットする
 まず．`git status`で，編集したファイル(追加・削除も含む)が赤く表示されていることを確認する
 ```
