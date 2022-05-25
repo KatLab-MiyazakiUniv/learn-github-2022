@@ -9,11 +9,13 @@
 class PidGain
 {
 public:
-    double kp;
-    double ki;
-    double kd;
+    double kp; // Pゲイン
+    double ki; // Iゲイン
+    double kd; // Dゲイン
 
+    // コンストラクタ
     PidGain(double _kp, double _ki, double _kd);
+    // 各メンバ変数のセッター
     void setPidGain(double _kp = 0.6, double _ki = 0.08, double _kd = 0.04);
 };
 

@@ -11,15 +11,15 @@
 class Pid
 {
 private:
-    PidGain gain;
-    double inte = 0;
-    int preError = 0;
-    double period = 0.004;
-    int error(int target, int out);
+    PidGain gain; // PIDゲイン
+    // 現在値と目標値の差を算出する
+    int error(int current, int target);
 
 public:
+    // コンストラクタ
     Pid(double _kp, double _ki, double _kd);
-    double control(int target, int out);
+    // P制御
+    double control(int current, int target);
 };
 
 #endif
